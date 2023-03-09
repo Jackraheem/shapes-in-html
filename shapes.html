@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: flex;
+            margin-top: 20px;
+        }
+        .circle{
+            height:200px;
+            width:200px;
+            border-radius:50%;
+            background-color: blue;
+        }
+        .circle-pill{
+            height:100px;
+            width:200px;
+            background-color: aqua;
+            border-radius: 100px;
+            margin-left: 25px;
+        }
+        .triangle{
+            margin-left: 35px;
+            
+            border:100px solid;
+            border-color: red green pink peru;
+        }
+        .triangle1{
+            margin-left: 35px;
+            
+            border:100px solid;
+            border-color: red transparent transparent transparent;
+        }
+        .triangle2{
+            margin-left: 24px;
+            
+            border:100px solid;
+            border-color:transparent green transparent transparent ;
+
+        }
+        .triangle3{
+            margin-left: 24px;
+            
+            border:100px solid;
+            border-color:transparent transparent aqua transparent ;
+
+        }
+        .triangle4{
+            margin-left: 24px;
+            
+            border:100px solid;
+            border-color:transparent transparent green peru ;
+
+        }
+        .main2{
+            display: flex;
+            margin-top: 35px;
+
+        }
+        .pacman{
+            width:0;
+            height: 0;
+          border:100px solid;
+          border-color:blue transparent blue blue;
+          border-radius: 50%;
+        }
+        .star{
+            margin-top: 45px;
+            width:0;
+            height: 0;
+            border-bottom: 70px solid red;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            transform: rotate(30deg);
+            position: relative;
+        }
+        .star::after{
+            content: '';
+            position: absolute;
+            width:0;
+            height: 0;
+            border-bottom: 70px red solid;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            transform: rotate(-75deg);
+            top:4px;
+            left:-100px;
+        }
+        .star::before{
+            position: absolute;
+            width:0;
+            height: 0;
+            content:'';
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            border-bottom: 80px solid red;
+            top:-50px;
+            left:-60px;
+            transform: rotate(-36deg);
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="circle"></div>
+    <div class="circle-pill"></div>
+    <div class="triangle"></div>
+    <div class="triangle1"></div>
+    <div class="triangle2"></div>
+    <div class="triangle3"></div>
+    <div class="triangle4"></div>
+
+    </div>
+    <div class="main2">
+        <div class="pacman"></div>
+        <div class="star"></div>
+
+    </div>
+</body>    
+</html>
